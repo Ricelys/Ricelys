@@ -6,7 +6,7 @@ const yesButton = document.querySelector(".btn--yes");
 const noButton = document.querySelector(".btn--no");
 const catImg = document.querySelector(".cat-img");
 
-const MAX_IMAGES = 5;
+const MAX_IMAGES = 11;
 
 let play = true;
 let noCount = 0;
@@ -27,7 +27,7 @@ noButton.addEventListener("click", function () {
 });
 
 function handleYesClick() {
-  titleElement.innerHTML = "Aleluya!! :3";
+  titleElement.innerHTML = "Yayyy!! :3";
   buttonsContainer.classList.add("hidden");
   changeImage("yes");
 }
@@ -47,7 +47,13 @@ function generateMessage(noCount) {
     "Si yo te agarro con eta silla",
     "wey pero ya  :(",
     "No pero",
-    "Bai me voy a llora...;(",
+    "Bai me voy a llora...",
+    "Ni lo consideres.",
+    "En serio, ¿estás seguro?",
+    "Si te agarro con eso...",
+    "Pero ya, déjalo :(",
+    "No, pero...",
+    "Me voy a poner a llorar... :(",
   ];
 
   const messageIndex = Math.min(noCount, messages.length - 1);
