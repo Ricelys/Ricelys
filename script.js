@@ -27,7 +27,7 @@ noButton.addEventListener("click", function () {
 });
 
 function handleYesClick() {
-  titleElement.innerHTML = "aleluya!! :3";
+  titleElement.innerHTML = "Aleluya!! :3";
   buttonsContainer.classList.add("hidden");
   changeImage("yes");
 }
@@ -35,7 +35,7 @@ function handleYesClick() {
 function resizeYesButton() {
   const computedStyle = window.getComputedStyle(yesButton);
   const fontSize = parseFloat(computedStyle.getPropertyValue("font-size"));
-  const newFontSize = fontSize * 20 + 16;
+  const newFontSize = fontSize * 1.6;
 
   yesButton.style.fontSize = `${newFontSize}px`;
 }
@@ -47,7 +47,7 @@ function generateMessage(noCount) {
     "Si yo te agarro con eta silla",
     "wey pero ya  :(",
     "No pero",
-    "Bai me voy a lloro...",
+    "Bai me voy a llora...;(",
   ];
 
   const messageIndex = Math.min(noCount, messages.length - 1);
